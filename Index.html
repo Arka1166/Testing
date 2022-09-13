@@ -6,14 +6,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <style>
         * {
             box-sizing: border-box;
         }
 
-        h1, h2 {
+        body {
+            background-color: rgb(179, 216, 204);
+        }
+
+        .navmenu {
+            background-color: grey;
+            border-radius: 30px;
+            margin: auto auto;
+            /* padding-top: 4px; */
+
+        }
+
+        .navmenu ul {
+            overflow: auto;
+        }
+
+        .navmenu li {
+            float: left;
+            list-style: none;
+            margin: 12px 20px;
+        }
+
+        .navmenu li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .navmenu a:hover {
+            color: blue;
+            background-color: white;
+        }
+
+        .search {
+            float: right;
+            /* color: red; */
+            padding: 12px 75px;
+        }
+
+        .navmenu input {
+
+            border: 1px solid darkgrey;
+            border-radius: 16px;
+            padding: 4px 16px;
+            width: 180px;
+        }
+
+        h1 {
+            color: yellow;
+            font-family: "Audiowide", sans-serif;
+        }
+
+        h2 {
             font-family: "Audiowide", sans-serif;
             color: rgba(230, 11, 11, 0.281);
         }
@@ -24,43 +77,64 @@
 
         .container {
             padding: 20px;
-            border: 4px solid rgba(7, 99, 15, 0.418);
+            border: 4px dotted rgba(7, 99, 15, 0.418);
             margin: 40px auto;
             background-color: #b6ccc2;
             width: 500px;
             height: 300px;
             /* float: left; */
         }
-        .box{
+
+        .box {
 
             width: 1200px;
             height: 1300px;
             padding: 50px;
             border: 3px solid brown;
             margin: auto auto;
+            background-color: rgb(93, 136, 100);
         }
-        #con1{
+
+        #con1 {
             float: left;
         }
-        #con2{
+
+        #con2 {
             float: right;
         }
-        #con3{
+
+        #con3 {
             float: left;
         }
-        #con4{
+
+        #con4 {
             float: right;
         }
-        #con5{
+
+        #con5 {
             float: left;
         }
-        #con6{
+
+        #con6 {
             float: right;
         }
     </style>
 </head>
 
 <body>
+
+    <nav class="navmenu">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Other Stuff</a></li>
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="Search This Website">
+            </div>
+        </ul>
+
+    </nav>
 
     <div class="box">
         <h1>Welcome to Our Dictionary</h1>
@@ -101,7 +175,6 @@
 
         </div>
     </div>
-
 </body>
 
 </html>
